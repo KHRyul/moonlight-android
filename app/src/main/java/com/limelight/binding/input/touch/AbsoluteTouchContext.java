@@ -96,7 +96,7 @@ public class AbsoluteTouchContext implements TouchContext {
         if (actionIndex == 0) {
             // Start the timers
             startTapDownTimer();
-            startLongPressTimer();
+            //startLongPressTimer();
         }
 
         return true;
