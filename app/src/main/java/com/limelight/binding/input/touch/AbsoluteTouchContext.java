@@ -95,8 +95,11 @@ public class AbsoluteTouchContext implements TouchContext {
 
         if (actionIndex == 0) {
             // Start the timers
-            startTapDownTimer();
+            //startTapDownTimer();
             //startLongPressTimer();
+
+            // Start left mouse button immediately.
+            tapConfirmed();
         }
 
         return true;
