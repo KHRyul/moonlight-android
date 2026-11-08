@@ -2119,10 +2119,10 @@ public class Game extends Activity implements SurfaceHolder.Callback,
                     default:
                         return false;
                 }
+            }
 
-                // All finger events are handled here.
-                return true;
-
+            // All finger events are handled here.
+            return true;
         }
 
         // Unknown class
