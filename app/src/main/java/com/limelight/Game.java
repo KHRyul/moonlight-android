@@ -2018,15 +2018,12 @@ public class Game extends Activity implements SurfaceHolder.Callback,
                     yOffset = 0.f;
                 }
 
-                //int actionIndex = event.getActionIndex();
+                int actionIndex = event.getActionIndex();
+                int actionMasked = event.getActionMasked();
 
                 int eventX = (int)(event.getX(actionIndex) + xOffset);
                 int eventY = (int)(event.getY(actionIndex) + yOffset);
 
-                
-                int actionIndex = event.getActionIndex();
-                int actionMasked = event.getActionMasked();
-                
                 switch (actionMasked) {
                     case MotionEvent.ACTION_DOWN: {
                         // A new gesture starts only when no previous finger is active.
