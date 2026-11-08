@@ -2018,7 +2018,7 @@ public class Game extends Activity implements SurfaceHolder.Callback,
                     yOffset = 0.f;
                 }
 
-                int actionIndex = event.getActionIndex();
+                //int actionIndex = event.getActionIndex();
 
                 int eventX = (int)(event.getX(actionIndex) + xOffset);
                 int eventY = (int)(event.getY(actionIndex) + yOffset);
