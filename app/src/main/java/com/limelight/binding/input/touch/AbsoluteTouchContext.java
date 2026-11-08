@@ -245,8 +245,11 @@ public class AbsoluteTouchContext implements TouchContext {
 
     @Override
     public void setPointerCount(int pointerCount) {
-        if (actionIndex == 0 && pointerCount > 1) {
-            cancelTouch();
-        }
+        //if (actionIndex == 0 && pointerCount > 1) {
+        //    cancelTouch();
+        //}
+
+        // Additional fingers are ignored by Game.java.
+        // Never cancel the primary touch due to pointer count changes.
     }
 }
